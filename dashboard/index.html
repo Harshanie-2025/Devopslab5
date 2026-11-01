@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #1e3a8a;
+            color: white;
+            padding: 22px;
+            text-align: center;
+        }
+
+        nav {
+            background: #172554;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            padding: 25px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 24px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #00000012;
+        }
+
+        .card h3 {
+            color: #475569;
+        }
+
+        .number {
+            font-size: 30px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        section {
+            background: white;
+            padding: 22px;
+            margin-top: 24px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Dashboard</h1>
+        <p>Welcome to your dashboard</p>
+    </header>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#tasks">Tasks</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <main>
+        <section id="overview">
+            <h2>Dashboard Overview</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Projects</h3>
+                    <p class="number">4</p>
+                </div>
+                <div class="card">
+                    <h3>Completed Tasks</h3>
+                    <p class="number">12</p>
+                </div>
+                <div class="card">
+                    <h3>Pending Tasks</h3>
+                    <p class="number">3</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tasks">
+            <h2>My Tasks</h2>
+            <ul>
+                <li>Complete dashboard design</li>
+                <li>Review project progress</li>
+                <li>Update project documentation</li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>About This Module</h2>
+            <p>
+                This dashboard displays project statistics,
+                task information, and an overview of project progress.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>DevOps Lab Project | Dashboard Module - Person C</p>
+    </footer>
+</body>
+</html>
